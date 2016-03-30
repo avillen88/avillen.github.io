@@ -1,0 +1,207 @@
+@-webkit-keyframes island-entrance {
+    0%   {top: 3000px;}
+    20%  {top: -30px;}
+    25%  {top: 10px;}
+    30%  {top: -10px;}
+    35%  {top: 7px;}
+    40%  {top: -7px;}
+    45%  {top: 5px;}
+    50%  {top: -5px;}
+    55%  {top: 3px;}
+    60%  {top: -3px;}
+    65%  {top: 3px;}
+    70%  {top: -3px;}
+    75%  {top: 2px;}
+    80%  {top: -2px;}
+    85%  {top: 1px;}
+    90%  {top: -1px;}
+    95%  {top: 1px;}
+    100% {top: -1px;}
+}
+@keyframes island-entrance {
+    0%   {top: 3000px;}
+    20%  {top: -30px;}
+    25%  {top: 10px;}
+    30%  {top: -10px;}
+    35%  {top: 7px;}
+    40%  {top: -7px;}
+    45%  {top: 5px;}
+    50%  {top: -5px;}
+    55%  {top: 3px;}
+    60%  {top: -3px;}
+    65%  {top: 3px;}
+    70%  {top: -3px;}
+    75%  {top: 2px;}
+    80%  {top: -2px;}
+    85%  {top: 1px;}
+    90%  {top: -1px;}
+    95%  {top: 1px;}
+    100% {top: -1px;}
+}
+
+
+@-webkit-keyframes pinanimation {
+    0%   {top: -400px;}
+    20%  {top: 30px;}
+    25%  {top: -10px;}
+    30%  {top: 10px;}
+    35%  {top: -7px;}
+    40%  {top: 7px;}
+    45%  {top: -5px;}
+    50%  {top: 5px;}
+    55%  {top: -3px;}
+    60%  {top: 3px;}
+    65%  {top: -3px;}
+    70%  {top: 3px;}
+    75%  {top: -2px;}
+    80%  {top: 2px;}
+    85%  {top: -1px;}
+    90%  {top: 1px;}
+    95%  {top: -1px;}
+    100% {top: 1px;}
+}
+@keyframes pinanimation {
+    0%   {top: -400px;}
+    20%  {top: 30px;}
+    25%  {top: -10px;}
+    30%  {top: 10px;}
+    35%  {top: -7px;}
+    40%  {top: 7px;}
+    45%  {top: -5px;}
+    50%  {top: 5px;}
+    55%  {top: -3px;}
+    60%  {top: 3px;}
+    65%  {top: -3px;}
+    70%  {top: 3px;}
+    75%  {top: -2px;}
+    80%  {top: 2px;}
+    85%  {top: -1px;}
+    90%  {top: 1px;}
+    95%  {top: -1px;}
+    100% {top: 1px;}
+}
+
+@-webkit-keyframes pulse-grow {
+    0%   {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    5%   {@include background(url('../images/next-orange.svg')); @include transform(scale(1.1,1.1));}
+    10%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    15%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    20%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    25%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    30%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    35%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    40%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    45%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    50%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    55%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    60%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    65%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    70%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    75%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    80%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    85%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    90%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    95%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    100% {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+}
+@keyframes pulse-grow {
+    0%   {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    5%   {@include background(url('../images/next-orange.svg')); @include transform(scale(1.1,1.1));}
+    10%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    15%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    20%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    25%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    30%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    35%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    40%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    45%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    50%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    55%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    60%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    65%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    70%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    75%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    80%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    85%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    90%  {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+    95%  {@include background(url('../images/next-orange.svg'));@include transform(scale(1.1,1.1));}
+    100% {@include background(url('../images/next.svg')); @include transform(scale(1,1));}
+}
+
+@-webkit-keyframes growing {
+    0%   {@include transform( scale(1,1));}
+    5%   {@include transform(scale(1.05,1.05));}
+    10%  {@include transform( scale(1,1));}
+    15%  {@include transform(scale(1.05,1.05));}
+    20%  {@include transform( scale(1,1));}
+    25%  {@include transform(scale(1.05,1.05));}
+    30%  {@include transform( scale(1,1));}
+    35%  {@include transform(scale(1.05,1.05));}
+    40%  {@include transform( scale(1,1));}
+    45%  {@include transform(scale(1.05,1.05));}
+    50%  {@include transform( scale(1,1));}
+    55%  {@include transform(scale(1.05,1.05));}
+    60%  {@include transform( scale(1,1));}
+    65%  {@include transform(scale(1.05,1.05));}
+    70%  {@include transform( scale(1,1));}
+    75%  {@include transform(scale(1.05,1.05));}
+    80%  {@include transform( scale(1,1));}
+    85%  {@include transform(scale(1.05,1.05));}
+    90%  {@include transform( scale(1,1));}
+    95%  {@include transform(scale(1.05,1.05));}
+    100% {@include transform( scale(1,1));}
+}
+@keyframes growing {
+    0%   {@include transform( scale(1,1));}
+    5%   {@include transform(scale(1.05,1.05));}
+    10%  {@include transform( scale(1,1));}
+    15%  {@include transform(scale(1.05,1.05));}
+    20%  {@include transform( scale(1,1));}
+    25%  {@include transform(scale(1.05,1.05));}
+    30%  {@include transform( scale(1,1));}
+    35%  {@include transform(scale(1.05,1.05));}
+    40%  {@include transform( scale(1,1));}
+    45%  {@include transform(scale(1.05,1.05));}
+    50%  {@include transform( scale(1,1));}
+    55%  {@include transform(scale(1.05,1.05));}
+    60%  {@include transform( scale(1,1));}
+    65%  {@include transform(scale(1.05,1.05));}
+    70%  {@include transform( scale(1,1));}
+    75%  {@include transform(scale(1.05,1.05));}
+    80%  {@include transform( scale(1,1));}
+    85%  {@include transform(scale(1.05,1.05));}
+    90%  {@include transform( scale(1,1));}
+    95%  {@include transform(scale(1.05,1.05));}
+    100% {@include transform( scale(1,1));}
+}
+
+@-webkit-keyframes title-entrance {
+    0%   {@include transform (translateX(-800px));}
+    50%  {@include transform (translateX(20px));}
+    100% {@include transform (scale(1,1));}
+}
+@keyframes title-entrance {
+    0%   {@include transform (translateX(-800px));}
+    50%  {@include transform (translateX(20px));}
+    100% {@include transform (scale(1,1));}
+}
+
+@-webkit-keyframes button-entrance {
+    0%   {@include transform (translateX(800px));}
+    50%  {@include transform (translateX(-20px));}
+    100% {@include transform (scale(1,1));}
+}
+@keyframes button-entrance {
+    0%   {@include transform (translateX(800px));}
+    50%  {@include transform (translateX(-20px));}
+    100% {@include transform (scale(1,1));}
+}
+
+@-webkit-keyframes mission-info-entrance {
+    0%   {@include transform(translateY(-10px));}
+    100% {@include transform (translateY(-300px));}
+}
+@keyframes mission-info-entrance {
+    0%   {@include transform(translateY(-10px));}
+    100% {@include transform (translateY(-300px));}
+}

@@ -1,0 +1,28 @@
+.home {
+    h1 {
+        color:#fff;
+        font-size: 36px;
+        text-shadow: 1px 2px 0px black;
+        @include animation(title-entrance 2s forwards);
+    }
+    .logo{
+        width: 400px;
+        height: 90px;
+        margin: auto;
+    }
+    .home-island{
+        @include animation(island-entrance 4s forwards);
+    }
+    
+    .button-container{
+        @include animation(button-entrance 2s forwards);
+    }
+}
+
+.home-button{
+    @include animation(growing 10s infinite);
+    @include animation-fill-mode (forwards);
+	&:hover{
+		background: linear-gradient(-90deg, #FF9700 0%, #FFDE00 48%, #FF8200 100%);
+	}
+}

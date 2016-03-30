@@ -1,0 +1,156 @@
+.sidebar{
+	font-family: 'Blenda Script';
+	background-color: $dark-gray;
+	position: absolute;
+	width: 300px;
+	margin-left: -300px;
+	top:0;
+	bottom:0;
+	height: 100%;
+	color: #fff;
+	font-size: 18px;
+	z-index: 5;
+	
+	@media screen and (min-width:62em) {
+		margin-left: 0;
+    }
+}
+
+.sidebar-button{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: #292929;
+    top: 20px;
+    right: -40px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+	@media screen and (min-width:62em) {
+        display:none;
+    }
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background:url("../images/back.svg") no-repeat center top; 
+	@include transition (width 1s, height 1s, transform 1s);
+}
+
+.sidebar-button.open .arrow{
+    @include transform(rotate(-180deg));
+}
+
+.side-menu{
+	background-color: $dark-gray;
+	a{
+		padding: 10px 20px 10px 20px;
+		display: block;
+	}
+	a:hover{
+		color: $orange;
+	}
+}
+
+.side-title{
+	padding: 40px 20px 0 20px;
+}
+
+.sub-list{
+	margin-top: 20px;
+}
+
+.resources-section{
+    margin-left: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+	
+	@media screen and (min-width:62em) {
+		margin-left: 300px;
+    }
+}
+
+.resources-wrapper{
+    padding-top: 80px;
+    margin:0 10px 0 10px;
+    @media screen and (min-width:48em) {
+        margin:0 30px 0 30px;
+    }
+    @media screen and (min-width:62em) {
+        margin:0 100px 0 100px;
+    }
+    @media screen and (min-width:98em) {
+        margin:0 200px 0 200px;
+    }
+}
+
+.resources-box{
+    @extend .clearfix;
+	font-family: 'Blenda Script';
+	color: #fff;
+	background: $dark-gray;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+	h2{
+    	margin-bottom: 20px;
+	}
+	p{
+    	line-height: 26px; 
+    	margin-bottom: 20px;
+	}
+	div{
+	    width: 100%;
+	    height: 245px;
+        background: #fff url('../images/resources.png') no-repeat center bottom;
+        background-size: contain;
+        display: inline-block;
+        border: 2px solid $dark-gray;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        @media screen and (min-width:48em) {
+            width: 50%;
+        }
+	}
+	a{
+    	float: right;
+        &:hover{
+    		color: $orange;
+    	}
+	}
+}
+
+.backwards{
+    margin: 5px 0 0 10px;
+    display: table;
+    vertical-align: middle;
+    a{
+        text-decoration: none;
+        color: inherit;
+        vertical-align: middle;
+        display: table-cell;
+        padding: 0 0 0 10px;
+    }
+    &:before{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background: url("../images/back-white.svg") no-repeat center top;
+        background-size: contain;
+        content: "";
+        
+    }
+    &:hover:before{
+             background: url('../images/back-orange.svg') no-repeat center top;
+             background-size: contain;
+        }
+    &:hover:a{
+        color: $orange;
+    }
+}

@@ -1,0 +1,19 @@
+.intro{
+    .main-wrapper{
+        width: 360px;
+    	margin:30px auto 0 auto;
+        @media screen and (min-width:48em) {
+            width: 560px;
+        }
+    }
+    p{
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 26px;
+    }
+    a{
+        margin-top:30px;
+    }
+}

@@ -1,0 +1,53 @@
+.backoffice { 
+    .logo-white {
+        width: 200px;
+        height: 68px;
+        margin: auto;
+    }
+    h1{
+        color: #fff;
+    }
+    .signin{
+        @extend .clearfix;
+        font-family: sans-serif;
+        width: 360px;
+        background:url('../images/login.svg') no-repeat center top;
+        background-size: 90px;
+    	padding-top: 100px;
+    	margin-top: 50px;
+    	margin-left: auto;
+    	margin-right: auto;
+        @media screen and (min-width:48em) {
+            padding-top: 190px;
+            background-size: auto;
+            width: 460px;
+        }
+    }
+        input[type=submit]{
+        padding: 8px 0 8px 0;
+        margin: 0 auto;
+        color: #fff;
+        margin-top: 90px;
+        }
+        a{
+            color: $orange;
+            margin-top: 18px;
+            float: right;
+                &:hover{
+                	color:#ffbb43;	
+                }	
+        }
+        .input-inline{
+            color:#ababab;
+            margin:30px 10px 0 0;
+        }
+        label:before{
+            border: 1px solid #ababab;
+        }
+        .login{
+            .input-inline{
+                display: inline-block;
+                margin: 12px 0 0 0;
+            }
+    }
+}

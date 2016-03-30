@@ -1,0 +1,191 @@
+ .mission {
+    .pin{
+        height: 790px;
+    	width: 100%;
+    	margin: auto;
+    	background-size: contain;
+    	background-position: center 15%;
+    	background-repeat: no-repeat;
+    	position: absolute;
+        @include animation (pinanimation 5s);
+    	@media screen and (min-width:48em) {
+    		height: 620px;
+    		width: 100%;
+    		background-position: center top;
+    	}
+    	@media screen and (min-width:62em) {
+    		height: 670px;
+    		width: 920px;
+    		background-position: center top;
+    	}
+    }
+    .info-panel{
+        width: 100%;
+    	height: 120px;
+        background: rgba(255,255,255,0.70);
+    	position: fixed;
+    	bottom:-200px;
+        @media screen and (min-width:48em) {
+            height: 100px;
+        }
+    	p{
+    		color: $dark-gray;
+    		margin-top:10px;
+    	}
+    }
+    .pin-info{
+    	float: left;
+    	background: url('../images/pin-info.svg') no-repeat center top;
+    	width: 30px;
+    	height: 55px;
+    	text-indent: -9999px;
+    	margin: 25px 25px 25px 10px;
+    	background-size: contain;
+    }
+    
+    .mission-info{
+    	float: left;
+    	max-width: 65%;
+    	padding: 15px 10px 10px 10px;
+    	@media screen and (min-width:48em) {
+    		padding: 18px;
+    		max-width: 75%;
+    	}
+    }
+    
+    .next{
+    	float: right;
+    	background: url('../images/next.svg') no-repeat center top;
+    	width: 40px;
+    	height: 40px;
+    	text-indent: -9999px;
+    	margin: 40px 15px 0 0;
+        @include animation (pulse-grow 10s infinite);
+        @include animation-iteration-count(1); 
+        @include animation-fill-mode(forwards);
+    	@media screen and (min-width:48em) {
+    		margin-top: 30px;
+    	}
+    }
+    
+    &.first {
+        .pin{
+        	background-image: url('../images/pin-small1.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin1.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin1.svg');
+        	}
+        }
+    }
+    &.second {
+        .pin{
+        	background-image: url('../images/pin-small2.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin2.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin2.svg');
+        	}
+        }
+    }
+    &.third {
+        .pin{
+        	background-image: url('../images/pin-small3.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin3.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin3.svg');
+        	}
+        }
+    }
+    &.forth {
+        .pin{
+        	background-image: url('../images/pin-small4.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin4.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin4.svg');
+        	}
+        }
+    }
+    &.fifth {
+        .pin{
+        	background-image: url('../images/pin-small5.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin5.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin5.svg');
+        	}
+        }
+    }
+    &.sixth {
+        .pin{
+        	background-image: url('../images/pin-small6.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin6.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin6.svg');
+        	}
+        }
+    }
+    &.seventh {
+        .pin{
+        	background-image: url('../images/pin-small7.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin7.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin7.svg');
+        	}
+        }
+    }
+    &.eighth {
+        .pin{
+        	background-image: url('../images/pin-small8.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin8.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin8.svg');
+        	}
+        }
+    }
+    &.ninth {
+        .pin{
+        	background-image: url('../images/pin-small9.svg');
+        	@media screen and (min-width:48em) {
+        		background-image: url('../images/pin9.svg');
+        	}
+        	@media screen and (min-width:62em) {
+        		background-image: url('../images/pin9.svg');
+        	}
+        }
+    }
+    
+    body:hover .pin{
+    animation: pinanimation;
+    animation-iteration-count:1;
+    animation-delay: 8s; 
+    animation-fill-mode:forwards;
+    }
+    
+    .info-panel{
+        @include animation (mission-info-entrance 2s);
+        @include animation-iteration-count(1); 
+        @include animation-fill-mode(forwards);
+    }
+    
+    /*body:hover .footer-translate{
+    	-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    	transition: width 2s, height 2s, transform 2s;
+    	transition-delay: 2s;
+    	-webkit-transform: translateY(320px);
+        transform: translateY(320px);
+    }*/
+}

@@ -1,0 +1,112 @@
+.button{
+	background: $orange;
+	color: $dark-gray;
+	font-size: 22px;
+	margin: auto;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 6px;
+    width: 155px;
+	display: block;
+    padding: 8px 60px 8px 60px;
+    border: none;
+    outline: none;
+    &:hover{
+    	background:#ffbb43;	
+    }
+}
+
+input[type=text]{
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+input[type=submit]{
+    &.button{
+        min-width: 260px;
+        cursor: pointer;
+    }
+}
+
+.input-inline{
+    input[type=checkbox], input[type=radio]{
+        display: none;
+    }
+    input[type=checkbox]:checked + label:before {
+        content: "";
+        background: url('../images/tick.svg') no-repeat center center;
+    }
+    input[type=radio]:checked + label:before {
+        content: "";
+        background: url('../images/tick.svg') no-repeat center center;
+    }
+    label {
+        cursor: pointer;
+        display: inline-block;
+        line-height: 32px;
+    }
+    label:before{
+        content: "";
+        display: inline-block;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        margin-right:10px;
+        padding: 5px;
+        border-radius: 50%;
+        position: relative;
+        top: -3px;
+        vertical-align: middle;
+    }
+}
+
+.questions{
+    color:#fff;
+	font-size: 18px;
+	line-height: 36px;
+	padding: 50px 10px 0 10px;
+	@media screen and (min-width:48em) {
+		padding: 50px 50px 0 50px;
+		width: 500px;
+		margin: auto;
+	}
+	input[type=submit]{
+    	border: none;
+    	width: 270px;
+    	padding: none;
+        background: $orange;
+    	color: $dark-gray;
+    	font-size: 22px;
+    	margin: auto;
+    	text-align: center;
+    	text-decoration: none;
+    	border-radius: 6px;
+        display: block;
+	}
+	label:before{
+        border: 1px solid #fff;
+	}
+	.input-inline{
+    	margin: 10px 0 10px 0;
+	}
+    .options{ 
+    	margin: 20px 0 50px 20px;
+    	@media screen and (min-width:48em) {
+    		margin: 20px 0 50px 50px;
+    	}
+    	li{
+    	    display: block;
+    		input{
+    			margin-right:20px;
+    		}
+    		span{
+        		display: inline-block;
+    		}
+    	}
+    }
+}
+

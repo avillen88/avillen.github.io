@@ -1,0 +1,22 @@
+.backoffice { 
+    .logo-white {
+        width: 200px;
+        height: 68px;
+        margin: auto;
+    }
+    h1{
+        color: #fff;
+    }
+    input{
+        display: block;
+        margin: 10px 0 10px 0;
+    }
+    .signin{
+        width: 360px;
+        background:url('../images/login.svg') no-repeat center top;
+    	padding-top: 190px;
+    	margin-top: 50px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+}

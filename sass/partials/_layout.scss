@@ -1,0 +1,181 @@
+//General
+    
+    
+    //Fonts
+    
+    @font-face{
+	    font-family: 'Blenda Script';
+	    src: url('../font/BlendaScript.otf');
+    } 
+    
+    body {
+        font-family: 'Blenda Script';
+		overflow-x: hidden;
+    }
+    
+    
+    
+    
+
+    //Backgrounds
+    
+    html {
+        height: 100%;
+    }
+    .island {
+        background: url('../images/island-small.png') no-repeat center center;
+        height: 790px;
+        width: 100%;
+    	background-size: contain;
+    	@media screen and (min-width:48em) {
+    		background: url('../images/island.png') no-repeat center top;
+    		height: 620px;
+    		width: 100%;
+    	}
+    	@media screen and (min-width:62em) {
+    		background: url('../images/island.png') no-repeat center top;
+    		height: 670px;
+    		width: 920px;
+    	}
+    }
+
+
+
+
+
+    //Logo
+    
+    .logo {
+        text-indent: -9999px;
+        display: block;
+        background: url(../images/logo.svg) center center no-repeat;
+        background-size: 100%;
+    } 
+    .logo-white {
+        text-indent: -9999px;
+        display: block;
+        background: url(../images/logo-white.svg) center center no-repeat;
+        background-size: 100%;
+    } 
+
+
+
+
+    //Clearfix
+    
+    .clearfix{
+    	&:before,&:after {
+    	    content: " ";
+    	    display: table;
+    	}
+    	&:after {
+    	    clear: both;
+    	}
+    }
+
+
+
+
+
+.home {
+    background: linear-gradient(0deg, #CAEAFF 0%, #4CC4FF 100%) no-repeat;
+    
+    .scene {
+        position: fixed;
+        top:    0;
+        right:  0;
+        bottom: 0;
+        left:   0;
+    }
+        .home-clouds {
+            position: relative;
+            top:    0;
+            right:  0;
+            bottom: 0;
+            left:   0;
+            width: 150%;
+            margin-left: -25%;
+            margin-bottom: -25%;
+            background: url("../images/clouds.svg") no-repeat center top;
+            height: 120%;
+        }
+        
+        .home-ocean {
+            @extend .home-clouds;
+            background: url("../images/ocean.png") no-repeat center top;
+        }
+            .home-island {
+                position: relative;
+                margin: 0 auto;
+            }
+    
+        header {
+            position: absolute;
+            bottom: 10%;
+            right:  0;
+            left:   0;
+            text-align: center;
+        }
+}
+
+.backoffice {
+    header {
+        background: $orange;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+.inner {
+    .landscape {
+        position: fixed;
+        top:    0;
+        right:  0;
+        bottom: 0;
+        left:   0;
+        background: url("../images/landscape.png") no-repeat center center;
+        z-index: -1;
+    }
+        .island {
+            margin: 0 auto;
+            background-position: center 15%;
+            position: relative;
+        }
+        
+        
+    .modal-wrapper {
+        position: fixed;
+        top:    0;
+        right:  0;
+        bottom: 0;
+        left:   0;
+        background: rgba(0,0,0,0.7);
+        overflow: scroll;
+        &.white {
+            background: rgba(255,255,255,0.7);
+        }
+    }
+    .main-wrapper{
+        padding: 50px 10px 10px 10px;
+        max-width: 1200px;
+        margin: 0 auto;
+    	@media screen and (min-width:62em) {
+    		padding: 50px;
+    	}
+        &.scroll{
+            padding-bottom: 200px;
+            @media screen and (min-width:48em) {
+        		padding-bottom: 50px;
+        	}
+        }
+    }
+    .logo{
+        width: 350px;
+        height: 80px;
+        margin: 0 auto 20px auto;
+    }
+}

@@ -1,0 +1,29 @@
+.modal-message{
+    .main-wrapper{
+        position: absolute;
+        left:50%;
+        top:50%;
+        width: 608px;
+        height: 160px;
+        margin-top: -130px;
+        margin-left: -320px;
+        @media screen and (min-width:48em) {
+           margin-left: -346px;
+           p{
+               color: #fff;
+               font-size: 18px;
+           } 
+        }
+    }
+    .a{
+        
+    }
+}
+
+.message{
+    font-size: 46px;
+    color: $orange;
+    text-shadow: 3px 2px 0px black;
+    margin-bottom:20px;
+    text-align: center; 
+}

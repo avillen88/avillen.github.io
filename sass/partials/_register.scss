@@ -1,0 +1,21 @@
+.register{
+    .main-wrapper{
+        width: 360px;
+    	margin:30px auto 0 auto;
+        @media screen and (min-width:48em) {
+            width: 560px;
+        }
+    }
+    p{
+        text-align: center;
+        color:#fff;
+        font-size: 18px;
+    }
+    input{
+        margin-top:20px;
+    }
+    input[type=submit]{
+        margin-top:40px;
+    }
+    
+}

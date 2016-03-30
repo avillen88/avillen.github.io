@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="home">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>ReuseTIC</title>
+		<meta name="description" content="">
+		<meta name="designer" content="alvaro villen">
+		
+		<link rel="shortcut icon" href="favicon.ico">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+		
+	</head>	
+	<body>
+		<div class="scene">
+    		<div class="home-clouds layer" data-depth="0.30"></div>
+    		<div class="home-ocean layer" data-depth="0.20">
+        		<div class="island home-island"></div>
+    		</div>
+    		<header>
+        		<h1>Bienvenido a<span class="logo">Reusetic</span></h1>
+        		<div class="button-container">
+            		<a class="button home-button" href="register.html">Empezar partida</a>
+        		</div>
+    		</header>
+		</div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.parallax.min.js"></script>
+
+    <script>
+		$(document).ready(function(){
+			$('.scene').parallax();
+		});
+    </script>
+
+
+</html>

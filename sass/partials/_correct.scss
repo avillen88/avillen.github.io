@@ -1,0 +1,24 @@
+.correct{
+    text-align: center;
+    p{
+        color:#fff;
+    }
+    .correct-increase{
+        margin: 40px auto 40px auto; 
+        span{
+            font-size: 70px;
+            display: block;
+            margin: 16px;
+            color: #fff;
+        }
+        p{
+            line-height: 28px;
+        }
+    }
+    border-radius: 6px;
+	box-sizing: border-box;
+	padding: 10px;		
+	.card{
+        background:rgba(32,32,32,0.60);
+	}
+}
